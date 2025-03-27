@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../imagenes empredimiento/style.css" />
+    <script src="../sitio web de muebles/imagenes empredimiento/script.js"></script>
+    <title>Todo Industrial</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html">
+          <img
+            class="imageIcon"
+            src="../imagenes empredimiento/logodelapagina.jpeg"
+            alt="logo empresa"
+          />
+        </a>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a
+              class="nav-link btn btn-primary text-white me-2"
+              href="../index.html"
+              >INICIO</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link btn btn-success text-white me-2"
+              href="../imagenes empredimiento/nuestrosservicios.html"
+              >NUESTROS SERVICIOS</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link btn btn-danger text-white"
+              href="../imagenes empredimiento/nuestrosproductos.html"
+              >NUESTROS PRODUCTOS</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link btn btn-danger text-white"
+              href="../imagenes empredimiento/referencias.html"
+              >REFERENCIAS
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <main>
+        <h2>Síguenos en nuestras redes sociales</h2>
+        <div class="container">
+          <ul class="contactos">
+            <li>
+              <a
+                href="https://www.instagram.com/lugonesrepuestos/#"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h3>¿Tienes alguna duda? ¡Déjanos un mensaje!</h3>
+        <form action="procesar.php" method="POST">
+          <div>
+            <label for="nombre" class="data">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+
+          <div>
+            <label for="email" class="data">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div>
+            <label for="telefono" class="data">Teléfono:</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="Ej: +34 600 123 456"
+              pattern="[+0-9]{10,15}"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="mensaje" class="data">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          </div>
+
+          <div>
+            <input type="submit" value="Enviar" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
