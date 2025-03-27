@@ -7,7 +7,10 @@
       rel="stylesheet"
       href="../sitio web de muebles/imagenes empredimiento/style.css"
     />
-    <script src="../sitio web de muebles/imagenes empredimiento/script.js"></script>
+    <script
+      src="../sitio web de muebles/mi archivo js/script.js"
+      defer
+    ></script>
     <title>Todo Industrial</title>
   </head>
   <body>
@@ -54,6 +57,54 @@
         </ul>
       </nav>
     </header>
+
+    <h1 class="title">Calculadora de Precio de Mueble</h1>
+
+    <div class="form-container">
+      <label for="tipoMueble" class="label"
+        >Selecciona el tipo de mueble:</label
+      >
+      <select id="tipoMueble" class="select">
+        <option value="300">Mesa</option>
+        <option value="500">Silla</option>
+        <option value="700">Estantería</option>
+        <option value="1000">Cama</option>
+      </select>
+    </div>
+
+    <div class="form-container">
+      <label for="tamanoMueble" class="label"
+        >Selecciona el tamaño del mueble:</label
+      >
+      <select id="tamanoMueble" class="select">
+        <option value="0">Pequeño</option>
+        <option value="100">Mediano</option>
+        <option value="200">Grande</option>
+      </select>
+    </div>
+
+    <div class="form-container">
+      <label for="flete" class="label"
+        >¿Deseas seguro de flete? (Sujeto a cargo adicional):</label
+      >
+      <input type="checkbox" id="flete" class="checkbox" />
+    </div>
+
+    <div class="form-container">
+      <label for="distancia" class="label"
+        >Introduce la distancia para el envío (en km):</label
+      >
+      <input type="number" id="distancia" class="input" placeholder="Ej. 10" />
+    </div>
+
+    <button onclick="calcularPrecio()" class="button">
+      Calcular Precio Total
+    </button>
+
+    <h2 class="resultado">
+      Precio Total: <span id="precioTotal" class="precio">0</span> USD
+    </h2>
+
     <footer class="footer">
       <p>Todos los derechos reservados</p>
     </footer>

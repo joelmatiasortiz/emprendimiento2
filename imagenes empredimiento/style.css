@@ -3,19 +3,18 @@ body {
   font-size: 15px;
   margin: 0;
   padding: 0;
-  background-image: url("../imagenes empredimiento/fondo\ 2.jpg");
+  background-color: #fafafa;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   color: #000000;
 }
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffffd7;
+  background-color: #e7e3e3;
   padding: 10px;
 }
 
@@ -92,11 +91,109 @@ input[type="submit"]:hover {
 }
 
 .footer {
-  background-color: #333;
-  color: white;
+  background-color: #e7e3e3;
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 10px;
   width: auto;
   position: relative;
   bottom: 0;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+.label {
+  margin-right: 10px;
+}
+
+.select,
+.input,
+.checkbox {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border: 1px solid #555;
+  padding: 10px;
+  font-size: 14px;
+  width: 200px;s
+}
+
+.button {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #050505;
+}
+
+.resultado {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.precio {
+  color: #000000;
+}
+
+#cabeceraPrincipal {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+#seccionMuebles {
+  margin-top: 20px;
+}
+
+#botonAgregarMueble {
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#botonAgregarMueble:hover {
+  background-color: #000000;
+}
+
+#listaDeMuebles {
+  list-style-type: none;
+  padding: 0;
+}
+
+#listaDeMuebles li {
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#piePagina {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
